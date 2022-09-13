@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<input type="color">
+	<div style="text-align : center;">
+	<img id="ps" src="POSTER.jpg">
+	<button id="microBut" style="font-family: serif; font-size: 20px; padding: 10px 20px 10px 20px; background-color: palevioletred; float:left;" >Play !</button>
+	<audio id="microSnd" src="jazz.m4a"></audio>
+	<button id="stopBut" style="font-family: serif; font-size: 20px; padding: 10px 20px 10px 20px; background-color: whitesmoke; float:left;">Stop -</button>
+</div>
+
+	<script type="text/javascript">
+
+		microBut.onclick = function(){
+			microSnd.play();
+		}
+		stopBut.onclick = function(){
+			microSnd.pause();
+		}
+		ps.onmouseover = function(){
+			ps.src = "POSTER2.jpg"
+		}
+		ps.onmouseout = function() {
+			ps.src = "POSTER.jpg"
+		}
+		document.body.style.background = "#575757";
+	</script>
+</body>
+</html>
